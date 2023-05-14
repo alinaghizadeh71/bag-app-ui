@@ -1,7 +1,5 @@
+import 'package:bag_app_ui/pages/home_page.dart';
 import 'package:flutter/material.dart';
-
-import 'home_page.dart';
-
 void main() {
   runApp(const MyApp());
 }
@@ -13,11 +11,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,      
+      title: 'Bag Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       home: HomePage(),
+      
     );
   }
 }
